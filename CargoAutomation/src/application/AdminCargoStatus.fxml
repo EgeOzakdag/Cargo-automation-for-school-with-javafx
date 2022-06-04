@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="629.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminCargoStatusController">
+   <children>
+      <TableView fx:id="CargoStatusTable" layoutX="25.0" layoutY="81.0" onMouseClicked="#CargoStatusTable_Clicked" prefHeight="283.0" prefWidth="853.0">
+        <columns>
+          <TableColumn fx:id="CargoID" prefWidth="34.0" text="CargoID " />
+          <TableColumn fx:id="CargoStatus" prefWidth="44.0" text="CargoStatus" />
+            <TableColumn fx:id="SenderName" prefWidth="49.0" text="SenderName" />
+            <TableColumn fx:id="SenderSurname" prefWidth="49.0" text="SenderSurname" />
+            <TableColumn fx:id="SenderIdentificationNumber" prefWidth="45.0" text="SenderIdentificationNumber" />
+            <TableColumn fx:id="SenderPhoneNumber" prefWidth="61.0" text="SenderPhoneNumber" />
+            <TableColumn fx:id="SenderEmail" prefWidth="53.0" text="SenderEmail" />
+            <TableColumn fx:id="SenderAddress" prefWidth="46.0" text="SenderAddress" />
+            <TableColumn fx:id="RecieverName" prefWidth="60.0" text="RecieverName" />
+            <TableColumn fx:id="RecieverSurname" prefWidth="79.0" text="RecieverSurname" />
+            <TableColumn fx:id="RecieverIdentificationNumber" prefWidth="68.0" text="RecieverIdentificationNumber" />
+            <TableColumn fx:id="RecieverPhoneNumber" prefWidth="61.0" text="RecieverPhoneNumber" />
+            <TableColumn fx:id="RecieverEmail" prefWidth="59.0" text="RecieverEmail" />
+            <TableColumn fx:id="RecieverAddress" prefWidth="117.0" text="RecieverAddress" />
+        </columns>
+      </TableView>
+      <Label layoutX="333.0" layoutY="14.0" text="Cargo Status">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="SenderNameTextField" layoutX="63.0" layoutY="414.0" prefHeight="27.0" prefWidth="161.0" promptText="SenderName" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="SenderSurnameTextField" layoutX="64.0" layoutY="440.0" prefHeight="27.0" prefWidth="161.0" promptText="SenderSurname" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="SenderIdentificationNumberTextField" layoutX="64.0" layoutY="467.0" prefHeight="27.0" prefWidth="161.0" promptText="SenderIdentificationNumber" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="SenderPhoneNumberTextField" layoutX="62.0" layoutY="494.0" prefHeight="27.0" prefWidth="167.0" promptText="SenderPhoneNumber" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="SenderEmailTextField" layoutX="62.0" layoutY="528.0" prefHeight="27.0" prefWidth="167.0" promptText="SenderEmail" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="SenderAddressTextField" layoutX="61.0" layoutY="561.0" prefHeight="27.0" prefWidth="174.0" promptText="SenderAddress" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <Text layoutX="64.0" layoutY="396.0" onMouseClicked="#AnnouncementTable_Clicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender Section" wrappingWidth="122.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="268.0" layoutY="404.0" onMouseClicked="#AnnouncementTable_Clicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Reciever Section" wrappingWidth="139.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="CargoStatusCombobox" layoutX="473.0" layoutY="436.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Status" />
+      <Text layoutX="460.0" layoutY="411.0" onMouseClicked="#AnnouncementTable_Clicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Cargo Section" wrappingWidth="114.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="RecieverNameTextField" layoutX="254.0" layoutY="414.0" prefHeight="27.0" prefWidth="167.0" promptText="RecieverName" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="RecieverSurnameTextField" layoutX="254.0" layoutY="442.0" prefHeight="27.0" prefWidth="167.0" promptText="RecieverSurname" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="RecieverIdentificationNumberTextField" layoutX="251.0" layoutY="467.0" prefHeight="27.0" prefWidth="174.0" promptText="RecieverIdentificationNumber" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="RecieverPhoneNumberTextField" layoutX="251.0" layoutY="494.0" prefHeight="27.0" prefWidth="174.0" promptText="RecieverPhoneNumber" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="RecieverEmailTextFiled" layoutX="251.0" layoutY="528.0" prefHeight="27.0" prefWidth="174.0" promptText="RecieverEmail" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="RecieverAddressTextFiled" layoutX="251.0" layoutY="561.0" prefHeight="27.0" prefWidth="174.0" promptText="RecieverAddress" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="UpDataCargoBtn" layoutX="499.0" layoutY="562.0" mnemonicParsing="false" onAction="#UpDataCargoBtn_Click" prefHeight="25.0" prefWidth="122.0" text="Update" />
+      <Button fx:id="DeleteCargoBtn" layoutX="499.0" layoutY="598.0" mnemonicParsing="false" onAction="#DeleteCargoBtn_Click" prefHeight="25.0" prefWidth="122.0" text="Delete" />
+      <TextField fx:id="CargoIDTextField" editable="false" layoutX="469.0" layoutY="515.0" prefHeight="27.0" prefWidth="167.0" promptText="CargoID" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label layoutX="473.0" layoutY="481.0" prefHeight="17.0" prefWidth="73.0" text="Cargo Statu :" />
+      <Label fx:id="StatuLabel" layoutX="546.0" layoutY="481.0" prefHeight="17.0" prefWidth="167.0" text="No value selected" />
+   </children>
+</AnchorPane>

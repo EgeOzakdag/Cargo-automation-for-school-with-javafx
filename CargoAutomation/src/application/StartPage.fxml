@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="StartPage" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #ffcc99;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StartPageController">
+   <children>
+      <HBox layoutX="10.0" layoutY="123.0" prefHeight="561.0" prefWidth="519.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="AdminBtn" mnemonicParsing="false" onAction="#AdminBtn_Click" prefHeight="569.0" prefWidth="178.0" style="-fx-background-color: #ffcc99;">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Admin.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="UserBtn" mnemonicParsing="false" onAction="#UserBtn_Click" prefHeight="567.0" prefWidth="167.0" style="-fx-background-color: #ffcc99;">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@User.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="RecieverBtn" mnemonicParsing="false" onAction="#RecieverBtn_Click" prefHeight="568.0" prefWidth="161.0" style="-fx-background-color: #ffcc99;">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@kargom%20nerde.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>

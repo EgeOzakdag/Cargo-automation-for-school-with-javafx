@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminMenuController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="175.0" spacing="3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="525.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="AdminInformationBtn" mnemonicParsing="false" onAction="#AdminInformationBtn_Click" prefHeight="104.0" prefWidth="177.0" style="-fx-background-color: #ffcc99;" text="MyInformation">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png-clipart-computer-icons-personally-identifiable-information-symbol-miscellaneous-text.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="AdminNoticeBtn" mnemonicParsing="false" onAction="#AdminNoticeBtn_Click" prefHeight="104.0" prefWidth="177.0" style="-fx-background-color: #ffcc99;" text="Add Notice">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@duyuru.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="AdminCargoStatusBtn" mnemonicParsing="false" onAction="#AdminCargoStatusBtn_Click" prefHeight="104.0" prefWidth="177.0" style="-fx-background-color: #ffcc99;" text="Cargo Status" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="69.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@kargom%20nerde.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="AdminNewCargoBtn" mnemonicParsing="false" onAction="#AdminNewCargoBtn_Click" prefHeight="104.0" prefWidth="177.0" style="-fx-background-color: #ffcc99;" text="New Cargo">
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@yeni%20kargo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="AdminUsersBtn" mnemonicParsing="false" onAction="#AdminUsersBtn_Clcik" prefHeight="104.0" prefWidth="177.0" style="-fx-background-color: #ffcc99;" text="Users">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Useradmin.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="AdminLogOutBtn" mnemonicParsing="false" onAction="#AdminLogOutBtn_Click" prefHeight="104.0" prefWidth="177.0" style="-fx-background-color: #ffcc99;" text="LogOut">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="92.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Cıkıs.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="AdminOperationPane" layoutX="181.0" minHeight="500.0" minWidth="525.0" prefHeight="500.0" prefWidth="525.0" />
+   </children>
+</AnchorPane>

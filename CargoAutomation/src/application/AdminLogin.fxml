@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AdminLoginAnchorPane" maxWidth="700.0" minWidth="500.0" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminLoginController">
+   <children>
+      <AnchorPane layoutX="-5.0" prefHeight="585.0" prefWidth="350.0" style="-fx-background-color: #ffcc99;">
+         <children>
+            <Text layoutX="120.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cargo">
+               <font><Font name="System Bold" size="34.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="İmageCargo" fitHeight="233.0" fitWidth="309.0" layoutX="21.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Arka%20plan.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="345.0" prefHeight="585.0" prefWidth="365.0">
+         <children>
+            <TextField fx:id="UsernameTextField" layoutX="93.0" layoutY="233.0" prefHeight="27.0" prefWidth="149.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="PasswordTextField" layoutX="93.0" layoutY="271.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #ffcc99; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="LoginBtn" layoutX="168.0" layoutY="315.0" mnemonicParsing="false" onAction="#LoginBtn_Click" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: #ffcc99;" text="Login" textFill="#f8f6f6" />
+            <Hyperlink fx:id="ForgotPasswordLink" layoutX="101.0" layoutY="354.0" onAction="#ForgotPasswordLink_Click" text="Forgot Your Password ?" />
+            <Text layoutX="112.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Login">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Button fx:id="RegisterBtn" layoutX="92.0" layoutY="315.0" mnemonicParsing="false" onAction="#RegisterBtn_Click" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: #ffcc99;" text="Register" textFill="#f8f6f6" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
